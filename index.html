@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>POTATOHUBV</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+  <h1>POTATOHUB</h1>
+
+  <p>Créditos: <span id="credits">0</span></p>
+  <p id="timer">Tiempo restante: --</p>
+
+  <input id="keyInput" placeholder="Ingresa tu KEY">
+  <button onclick="checkKey()">LOGIN</button>
+
+  <div class="buttons">
+    <button onclick="buyTime(6)">6 Hours (1 crédito)</button>
+    <button onclick="buyTime(12)">12 Hours (2 créditos)</button>
+    <button onclick="buyTime(24)">1 Day (3 créditos)</button>
+  </div>
+
+  <input id="codeInput" placeholder="Código promocional">
+  <button onclick="redeemCode()">Canjear código</button>
+
+  <p id="msg"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
